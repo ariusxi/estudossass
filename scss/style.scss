@@ -1,0 +1,65 @@
+$width: 100%;
+$font-size: 1.2rem;
+$background: #962acd;
+$color:#fff;
+$border-style: solid 1px $color;
+
+$width-rem: 3.5rem;
+$width-px: 300px;
+$width: 300;
+
+$font: "Lucida Grande";
+$weight: bold;
+
+$bg: red;
+$bg-section: rgba(0, 0, 0, 0.7);
+$font-color: #ffffff;
+
+$color-light: false;
+$color-dark: true;
+$color-dark: null;
+
+$animals: puma, sea-slug, egret, salamander;
+$animals: pula sea-slug egret salamander;
+$animals: "puma", "sea-slug", "egret", "salamander";
+
+$margin: 10px 20px 15px 20px;
+
+$social: (
+    facebook: #3b5998,
+    flickr: #0063db,
+    github: #4183c4,
+    googleplus: #dd4b39,
+    instagram: #517fa4,
+    linkedin: #007bb6,
+    pinterest: #cb2027,
+    soundcloud: #f60,
+    twitter: #00aced,
+    youtube: #b00
+);
+
+nav{
+    background: $background;
+    color: $color;
+    width: $width;
+    font-size: $font-size;
+}
+
+aside{
+    width: $width-px;
+}
+
+section{
+    font-family: $font;
+    font-weight: $weight;
+}
+
+body{
+    background: $bg;
+    color: $font-color;
+}
+
+section{
+    background: $bg-section;
+    margin: $margin;
+}
