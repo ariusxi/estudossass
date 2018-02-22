@@ -1,3 +1,5 @@
+//Introdução
+
 $width: 100%;
 $font-size: 1.2rem;
 $background: #962acd;
@@ -8,10 +10,14 @@ $width-rem: 3.5rem;
 $width-px: 300px;
 $width: 300;
 
+//Fim da Introdução
+
+// Variáveis
+
 $font: "Lucida Grande";
 $weight: bold;
 
-$bg: red;
+$bg: blue;
 $bg-section: rgba(0, 0, 0, 0.7);
 $font-color: #ffffff;
 
@@ -38,6 +44,17 @@ $social: (
     youtube: #b00
 );
 
+// Fim de Variáveis
+
+// Interpolação
+
+$name: destaque;
+$attr: border;
+
+// Fim de Interpolação
+
+// Introdução
+
 nav{
     background: $background;
     color: $color;
@@ -48,6 +65,10 @@ nav{
 aside{
     width: $width-px;
 }
+
+// Fim da Introdução
+
+// Variáveis
 
 section{
     font-family: $font;
@@ -63,3 +84,67 @@ section{
     background: $bg-section;
     margin: $margin;
 }
+
+// Fim de Variáveis
+
+// Interpolação
+
+p.#{$name}{
+    #{$attr}-color: blue;
+}
+
+p{
+    $font-size: 12px;
+    $line-height: 30px;
+    font: #{$font-size}/#{$line-height};
+}
+
+// Fim de Interpolação
+
+// Extend
+
+.msg{
+    border:1px solid;
+    padding: 4px;
+    text-align: center;
+}
+
+.msg-error{
+    @extend .msg;
+    border-color: #ff0000;
+    color:#ff0000;
+}
+
+.msg-alert{
+    @extend .msg;
+    border-color: #ff8e00;
+    color: #ff8e00;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration:underline;
+}
+
+.hoverlink{
+    @extend a:hover;
+    color:#000;
+}
+
+.error{
+    border: 1px #f00;
+    background-color: #fdd;
+}
+
+.attention{
+    font-size: 3em;
+    background-color: #ff0;
+}
+
+.seriousError{
+    @extend .error;
+    @extend .attention;
+    border-width: 3px;
+}
+
+// Fim do Extend

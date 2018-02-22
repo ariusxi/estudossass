@@ -12,9 +12,46 @@ section {
   font-weight: bold; }
 
 body {
-  background: red;
+  background: blue;
   color: #ffffff; }
 
 section {
   background: rgba(0, 0, 0, 0.7);
   margin: 10px 20px 15px 20px; }
+
+p.destaque {
+  border-color: blue; }
+
+p {
+  font: 12px/30px; }
+
+.msg, .msg-error, .msg-alert {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center; }
+
+.msg-error {
+  border-color: #ff0000;
+  color: #ff0000; }
+
+.msg-alert {
+  border-color: #ff8e00;
+  color: #ff8e00; }
+
+a:hover, .hoverlink {
+  color: #fff;
+  text-decoration: underline; }
+
+.hoverlink {
+  color: #000; }
+
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.attention, .seriousError {
+  font-size: 3em;
+  background-color: #ff0; }
+
+.seriousError {
+  border-width: 3px; }
